@@ -61,7 +61,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="saved"
+        name="search"
         options={{
           title: "Search",
           headerShown: false,
@@ -71,7 +71,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen
-        name="search"
+        name="saved"
         options={{
           title: "Saved",
           headerShown: false,
