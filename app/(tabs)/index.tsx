@@ -60,6 +60,7 @@ export default function Index() {
                 columnWrapperStyle={{
                   justifyContent: "flex-start",
                   gap: 20,
+                  // paddingRight: 9,
                   paddingRight: 5,
                   marginBottom: 10,
                 }}
