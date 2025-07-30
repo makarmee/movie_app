@@ -14,10 +14,10 @@ const TrendingCard = ({
         <TouchableOpacity className="w-32 relative pl-5">
           <Image
             source={{ uri: poster_url }}
-            className="w-32 h-48 rounded-lg"
+            className="w-32 aspect-[11/16] rounded-lg"
             resizeMode="cover"
           />
-          <View className="absolute bottom-9 -left-3.5 px-2 py-1 rounded-full">
+          <View className="absolute bottom-6 -left-3.5 px-2 py-1 rounded-full">
             <MaskedView
               maskElement={
                 <Text className="font-bold text-white text-6xl">
@@ -35,7 +35,7 @@ const TrendingCard = ({
 
           <Text
             className="text-sm font-bold mt-2 text-light-200"
-            numberOfLines={2}
+            numberOfLines={1}
           >
             {title}
           </Text>

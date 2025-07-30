@@ -19,7 +19,7 @@ const MovieCard = ({
               ? `https://image.tmdb.org/t/p/w500${poster_path}`
               : "https://placehold.co/600x400/1a1a1a/ffffff.png",
           }}
-          className="w-full h-52 rounded-lg"
+          className="w-full aspect-[11/16] rounded-lg "
           resizeMode="cover"
         />
         <Text className="text-sm font-bold text-white mt-2" numberOfLines={1}>
