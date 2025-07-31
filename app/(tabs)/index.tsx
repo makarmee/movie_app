@@ -6,7 +6,7 @@ import { images } from "@/constants/images";
 import { fetchMovies } from "@/services/api";
 import { getTrendingMovies } from "@/services/appwrite";
 import useFetch from "@/services/useFetch";
-import { useRouter } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import {
   ActivityIndicator,
   FlatList,
@@ -39,6 +39,12 @@ export default function Index() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ minHeight: "100%", paddingBottom: 10 }}
       >
+        <Link
+          href="/sign-in"
+          className="text-light-100 border border-light-100 rounded-full px-4 py-2 text-sm absolute right-0 top-4 font-semibold"
+        >
+          Sign In
+        </Link>
         <Image source={icons.logo} className="w-12 h-10 mt-20 mb-5 mx-auto" />
 
         {moviesLoading || trendingLoading ? (
