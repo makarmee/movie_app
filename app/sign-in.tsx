@@ -11,7 +11,7 @@ const SignIn = () => {
 
   const posters = (trendingMovies || [])
     .filter((m) => m.poster_url)
-    .slice(0, 3); // فقط ۳ پوستر
+    .slice(0, 3);
 
   const handleLogin = () => {
     // Login logic
